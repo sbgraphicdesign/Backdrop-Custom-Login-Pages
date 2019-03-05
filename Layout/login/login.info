@@ -7,8 +7,5 @@ backdrop = 1.x
 regions[header] = Header (for logo)
 regions[main] = Main (for login forms)
 
-; Include special file to generate HTML5 placeholders on inputs
-file = login.php
-
 ; Preview
 preview = login.png
