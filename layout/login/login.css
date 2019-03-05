@@ -1,0 +1,248 @@
+/* Base css - can be removed depending on your theme's CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-size: 100%;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $bodyfont;
+    background: white;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+/* End base CSS */
+
+/* Layout wrapper */
+.layout-login {
+	width: 90%;
+	margin: 10% auto 2rem;
+}
+
+@media (min-width: 481px) {
+	.layout-login {
+		width: 70%;
+	}
+}
+
+@media (min-width: 769px) {
+	.layout-login {
+		width: 50%;
+	}
+}
+
+@media (min-width: 1025px) {
+	.layout-login {
+		width: 35%;
+	}
+}
+
+@media (min-width: 1201px) {
+	.layout-login {
+		width: 30%;
+	}
+}
+
+/* Header */
+.layout-login .header-login {
+	width: 100%;
+	margin: 0 0 2rem;
+	text-align: center;
+}
+
+.layout-login .header-login .header-login-logo img {
+	width: 30% !important;
+	height: auto !important;
+	display: inline-block;
+}
+
+/* Main */
+.layout-login .main-login {
+	padding: 2rem;
+	text-align: center;
+	background: #fafafa;
+	border: 1px solid #d0d0d0;
+	border-radius: 2px;
+}
+
+.layout-login .main-login h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 2rem;
+	text-align: center;
+	color: #000;
+}
+
+@media (min-width: 769px) {
+	.layout-login .main-login h2 {
+		font-size: 2.4rem;
+	}
+}
+
+.main-login form {
+	margin: 2rem 0 0;
+}
+
+.main-login form .messages {
+	width: 100%;
+	margin: 2rem 0 1rem;
+	padding: 1rem;
+	text-align: center;
+	color: #908990;
+	border-color: #908990;
+	background-image: none;
+	background-color: #fafafa;
+}
+
+.main-login form#user-pass-reset-form > div p {
+	font-size: 1.4rem;
+	margin: 0 0 1rem;
+}
+
+.main-login form label {
+	display: none;
+}
+
+.main-login form input[type="text"],
+.main-login form input[type="email"],
+.main-login form input[type="password"] {
+	width: 100%;
+	height: 3.6rem;
+	padding: 0 1rem;
+	color: #444b53;
+	text-align: center;
+	border: 1px solid #d0d0d0;
+	border-radius: 4px;
+}
+
+.main-login form .form-item {
+	position: relative;
+}
+
+.main-login form .form-type-textfield:before,
+.main-login form .form-type-email:before,
+.main-login form .form-type-password:before {
+	width: 3.2rem;
+	margin: 0;
+	padding: .7rem 0;
+	font-family: FontAwesome;
+	font-size: 1.8rem !important;
+	color: #444b53;
+	text-align: center;
+	border: 1px solid #d0d0d0;
+	border-radius: 4px 0 0 4px;
+	background: #e5e5e6;
+	position: absolute;
+	left: 0;
+	z-index: 1;
+}
+
+.main-login form .form-submit {
+	width: 100%;
+	padding: 1rem 0 1rem 2rem;
+	font-size: 1.8rem;
+	background: #1766ae;
+	border: none;
+	color: white;
+	float: none;
+}
+
+.main-login form .form-submit:hover,
+.main-login form .form-submit:active {
+	background: #114a75;
+}
+
+.main-login form .form-cancel {
+	display: none;
+}
+
+.main-login form .form-item-name:before {
+	content: "\f007";
+}
+
+.main-login form .form-item-mail:before {
+	content: "\f0e0";
+}
+
+.main-login form .form-type-password:before {
+	content: "\f13e";
+}
+
+/* Password reset */
+.main-login form .password-strength,
+.main-login form .password-match {
+	width: 100%;
+	margin: .5rem 0;
+	padding: 1rem 0 0;
+	font-size: 1.2rem;
+	color: #444b53;
+}
+
+.main-login form .password-match {
+	padding: 0;
+}
+
+.main-login form .password-indicator {
+	height: .6rem;
+	background-color: #e9e8e8;
+}
+
+.main-login form .password-indicator .indicator {
+	left: 0;
+}
+
+.main-login form .weak .password-strength-text,
+.main-login form .mismatch .password-match-text {
+	font-weight: 700;
+	color: red;
+}
+
+.main-login form .fair .password-strength-text {
+	font-weight: 700;
+	color: orange;
+}
+
+.main-login form .strong .password-strength-text,
+.main-login form .match .password-match-text {
+	font-weight: 700;
+	color: green;
+}
+
+/* Footer */
+.layout-login .footer-login {
+	width: 100%;
+	margin: 2rem 0 0;
+	text-align: center;
+	background: none;
+	border-top: none;
+}
+
+.layout-login .footer-login p {
+	margin: 0 0 1rem;
+	font-size: 1.4rem;
+	line-height: 1;
+	text-align: center;
+}
+
+.layout-login .footer-login p:last-child {
+	margin: 0;
+	padding: 1rem 0 0;
+}

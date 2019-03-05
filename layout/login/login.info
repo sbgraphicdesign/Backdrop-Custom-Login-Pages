@@ -1,0 +1,14 @@
+type = layout
+name = Login, Password & Register pages layout
+version = BACKDROP_VERSION
+backdrop = 1.x
+
+; Specify regions for this layout.
+regions[header] = Header (for logo)
+regions[main] = Main (for login forms)
+
+; Include special file to generate HTML5 placeholders on inputs
+file = login.php
+
+; Preview
+preview = login.png
