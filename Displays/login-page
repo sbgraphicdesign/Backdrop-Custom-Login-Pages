@@ -1,0 +1,80 @@
+{
+    "_config_name": "layout.layout.login",
+    "path": "user/login",
+    "name": "login",
+    "title": "Login Page",
+    "description": null,
+    "renderer_name": "standard",
+    "module": null,
+    "weight": 0,
+    "storage": 1,
+    "layout_template": "login",
+    "disabled": false,
+    "settings": {
+        "title": "",
+        "title_display": "default",
+        "title_block": null
+    },
+    "positions": {
+        "header": [
+            "8587589d-4252-4c31-842d-45246a1b4bfd"
+        ],
+        "main": [
+            "812876cb-1b17-4702-a23f-630d9ace7c56"
+        ],
+        "title": []
+    },
+    "content": {
+        "8587589d-4252-4c31-842d-45246a1b4bfd": {
+            "plugin": "system:header",
+            "data": {
+                "module": "system",
+                "delta": "header",
+                "settings": {
+                    "title_display": "none",
+                    "title": "",
+                    "style": "default",
+                    "block_settings": {
+                        "menu": "",
+                        "logo": 1,
+                        "site_name": 0,
+                        "site_slogan": 0
+                    },
+                    "contexts": []
+                },
+                "uuid": "8587589d-4252-4c31-842d-45246a1b4bfd",
+                "style": {
+                    "plugin": "default",
+                    "data": {
+                        "settings": {
+                            "classes": ""
+                        }
+                    }
+                }
+            }
+        },
+        "812876cb-1b17-4702-a23f-630d9ace7c56": {
+            "plugin": "system:main",
+            "data": {
+                "module": "system",
+                "delta": "main",
+                "settings": {
+                    "title_display": "default",
+                    "title": "",
+                    "style": "default",
+                    "block_settings": [],
+                    "contexts": []
+                },
+                "uuid": "812876cb-1b17-4702-a23f-630d9ace7c56",
+                "style": {
+                    "plugin": "default",
+                    "data": {
+                        "settings": {
+                            "classes": ""
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
