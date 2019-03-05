@@ -1,4 +1,4 @@
-** Installation
+Installation
 1. Install Form Placeholder (form_placeholder) module as usual.
 2. Go to configuration page at "admin/config/user-interface/form-placeholder".
 3. Specify CSS selectors for textfields you want to add a placeholder.
@@ -15,7 +15,7 @@
       so the file "sites/all/libraries/jquery.placeholder/jquery.placeholder.js" will be accessible
 
 
-** Usage
+Usage
 // Convert all children in given form
 function MY_MODULE_form_FORM_ID_alter(&$form, &$form_state, $form_id) {
   $form['#form_placeholder'] = TRUE;
