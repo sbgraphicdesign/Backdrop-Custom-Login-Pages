@@ -1,0 +1,80 @@
+{
+    "_config_name": "layout.layout.register_page",
+    "path": "user/register",
+    "name": "register_page",
+    "title": "Register Page",
+    "description": null,
+    "renderer_name": "standard",
+    "module": null,
+    "weight": -1,
+    "storage": 1,
+    "layout_template": "login",
+    "disabled": false,
+    "settings": {
+        "title": "",
+        "title_display": "default",
+        "title_block": null
+    },
+    "positions": {
+        "header": [
+            "28b3d420-3761-4652-b609-9fd770950873"
+        ],
+        "main": [
+            "2d848b5c-7053-42cc-b509-9b7fb2453729"
+        ],
+        "title": []
+    },
+    "content": {
+        "28b3d420-3761-4652-b609-9fd770950873": {
+            "plugin": "system:header",
+            "data": {
+                "module": "system",
+                "delta": "header",
+                "settings": {
+                    "title_display": "none",
+                    "title": "",
+                    "style": "default",
+                    "block_settings": {
+                        "menu": "",
+                        "logo": 1,
+                        "site_name": 0,
+                        "site_slogan": 0
+                    },
+                    "contexts": []
+                },
+                "uuid": "28b3d420-3761-4652-b609-9fd770950873",
+                "style": {
+                    "plugin": "default",
+                    "data": {
+                        "settings": {
+                            "classes": ""
+                        }
+                    }
+                }
+            }
+        },
+        "2d848b5c-7053-42cc-b509-9b7fb2453729": {
+            "plugin": "system:main",
+            "data": {
+                "module": "system",
+                "delta": "main",
+                "settings": {
+                    "title_display": "default",
+                    "title": "",
+                    "style": "default",
+                    "block_settings": [],
+                    "contexts": []
+                },
+                "uuid": "2d848b5c-7053-42cc-b509-9b7fb2453729",
+                "style": {
+                    "plugin": "default",
+                    "data": {
+                        "settings": {
+                            "classes": ""
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
