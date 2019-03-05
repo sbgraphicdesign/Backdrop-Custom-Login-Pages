@@ -1,0 +1,7 @@
+name = Form Placeholder
+description = Use field label as placeholder for all elements in chosen form.
+package = User interface
+backdrop = 1.x
+type = module
+configure = admin/config/user-interface/form-placeholder
+
